@@ -1,0 +1,13 @@
+function LongestWord(sen) { 
+
+  // code goes here
+  sen=sen.match(/[a-zA-Z]+/g);
+  var longestWord =" ";
+  
+  for (var i=0;i<sen.length;i++)
+    {if (sen[i].length>longestWord.length)
+      {longestWord=sen[i]}
+    }
+  return longestWord; 
+         
+}
