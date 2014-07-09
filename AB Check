@@ -1,0 +1,12 @@
+function ABCheck(str) { 
+
+  var abCheck= str.match(/a.{3}b/g) || str.match(/b.{3}a/g);
+  
+  if (abCheck != null) {
+    return "true";
+      } else {
+        return "false";
+      }
+  return str;       
+}
+   
