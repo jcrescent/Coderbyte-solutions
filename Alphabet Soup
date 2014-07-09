@@ -1,0 +1,8 @@
+function AlphabetSoup(str) { 
+
+  var letters=str.split("");
+  var alphabetize=letters.sort();
+  var alphabetizedString=alphabetize.join("");  
+  return alphabetizedString; 
+         
+}
