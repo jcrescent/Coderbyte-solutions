@@ -1,0 +1,17 @@
+function LetterChanges(str) { 
+  str = str.toLowerCase();
+  var newStr = "";
+  var character = '';
+  
+  for (var i = 0; i < str.length; i++) {
+    character = str.charCodeAt(i);
+    if(character > 96 && character < 123 ) character++;
+    if (character==123) character=65;
+    if (character==101) character=69;
+    if (character==105) character=73;
+    if (character==111) character=79;
+    if (character==117) character=85;
+    newStr += String.fromCharCode(character);
+  }
+  return newStr;
+}
