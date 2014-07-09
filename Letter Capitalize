@@ -1,0 +1,12 @@
+function LetterCapitalize(str) { 
+
+  var arr = str.split(" ");
+  
+  for (var i = 0; i<arr.length; i++) {
+    var letter = arr[i].split("");
+    letter[0] = arr[i].charAt(0).toUpperCase();
+    arr[i] = letter.join("");
+      }   
+  return arr.join(" "); 
+         
+}
