@@ -5,4 +5,4 @@ function FirstReverse(str) {
     .reverse()
     .join(""); 
          
-}
+};
