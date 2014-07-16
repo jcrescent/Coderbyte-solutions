@@ -1,0 +1,5 @@
+function Palindrome(str) { 
+
+  return str.match(/\w/g).reverse().join('') == str.match(/\w/g).join(''); 
+         
+}
