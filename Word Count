@@ -1,0 +1,11 @@
+function WordCount(str) { 
+  var string= str.split("");
+  var wordCount=0;
+      
+      for (var i=0; i<string.length; i++) {
+        if( string[i]== " ") {
+          wordCount+=1;
+        }
+      }
+  return (wordCount)+1; 
+}
