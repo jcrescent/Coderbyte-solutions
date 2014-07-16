@@ -1,0 +1,18 @@
+function SwapCase(str) { 
+
+  var arr=str.split("");
+  var swap=[];
+  
+  for (var i=0;i<str.length;i++) {
+    if (str.charCodeAt(i)<=90 && str.charCodeAt(i)>=65) {
+      swap.push(arr[i].toLowerCase());
+      }
+    else if (str.charCodeAt(i)<=122 && str.charCodeAt(i)>=97) {
+        swap.push(arr[i].toUpperCase());
+        } 
+    else {
+        swap.push(arr[i])
+        };
+      }    
+  return swap.join(""); 
+}
