@@ -1,0 +1,15 @@
+function PowersofTwo(num) {
+  
+  var count=num;
+  
+  while (count >=2) {
+    count/=2
+      if (count==2) {
+        return true
+          break;
+      }
+  }
+     return false       
+  
+  return count; 
+}         
