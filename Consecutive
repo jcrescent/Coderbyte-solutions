@@ -1,0 +1,10 @@
+function Consecutive(arr) { 
+
+  var count=0;
+  arr=arr.sort(function (a,b){return b-a});
+  
+  for (var i=0;i<arr.length-1;i++) {
+    count+=(arr[i]-arr[i+1])-1;
+   }
+  return count;         
+}
