@@ -1,0 +1,13 @@
+function SecondGreatLow(arr) { 
+
+  var diffValues=[];                                          // populate with all different values in array
+  var newArr=arr.sort(function (a,b){return a-b});            //sort array in numerical order
+  
+  for (var i=0;i<newArr.length;i++) {                          // finds distinct values and populates diffValues varible 
+    if (newArr[i]!==newArr[i+1]) {
+      diffValues.push(newArr[i]);
+      }
+    }        
+  return diffValues[1]+" "+diffValues[diffValues.length-2];          // returns the second and second to last elements of numerically sorted array of distinct values
+         
+}
