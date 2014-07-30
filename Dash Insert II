@@ -1,0 +1,15 @@
+function DashInsertII(num) { 
+
+num=num.toString().split("");
+
+for(var i=0;i<num.length;i++) {
+  if ((num[i]%2==1) && (num[i+1]%2==1)) {
+  num.splice(++i,0,"-");
+   }
+  if ((num[i]%2==0) && (num[i+1]%2==0)) {
+  num.splice(++i,0,"*");
+   }
+ }
+  return num.join(""); 
+         
+}
