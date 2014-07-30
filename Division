@@ -1,0 +1,9 @@
+function Division(num1,num2) { 
+  var arr=[]
+  for (var i=0;i<=1000;i++) {
+    if (num1%i==0 && num2%i==0) {
+      arr.push(i);
+    }
+  }
+  return arr[arr.length-1];         
+}
