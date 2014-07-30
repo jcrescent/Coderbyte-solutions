@@ -1,0 +1,18 @@
+function DistinctList(arr) { 
+
+  arr=arr.sort(function(a,b){return a-b});
+  
+  var dupCount=0;
+  var distincts=[];
+  
+  for (var i=0;i<arr.length;i++) {
+    if (arr[i]!== distincts[distincts.length-1]) {
+      distincts.push(arr[i]);
+    } else {
+      dupCount+=1;
+    }
+  }
+  return dupCount; 
+         
+}
+   
