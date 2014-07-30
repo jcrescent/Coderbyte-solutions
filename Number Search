@@ -1,0 +1,13 @@
+function NumberSearch(str) { 
+
+  var letters= str.match(/[a-zA-Z]/g);
+  var numbers= str.match(/[0-9]/g);
+  var sum=0;
+  
+  for (var i=0;i<numbers.length;i++) {
+    sum+= parseInt(numbers[i]);
+  }
+
+  return Math.round(sum/(letters.length)); 
+}
+         
