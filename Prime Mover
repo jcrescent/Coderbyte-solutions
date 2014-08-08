@@ -1,0 +1,22 @@
+function PrimeMover(num) { 
+  
+  function isPrime(val) { 
+    var sqrt = Math.ceil(Math.sqrt(val));
+    for (var i=2;i<=sqrt;i++) {
+      if ((val%i)==0) {
+       return false;
+      }
+    }
+   return true;
+  }
+  
+  var newArr=[];
+  
+  for (var i=0;i<=10000;i++) {
+    if (isPrime(i)) {
+     newArr.push(i);
+    }
+  }
+  return newArr[num];        
+}
+   
