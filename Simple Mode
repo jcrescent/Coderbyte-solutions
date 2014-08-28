@@ -1,0 +1,18 @@
+function SimpleMode(arr) { 
+  
+    var object = {};
+    var maxEl = arr[0], maxCount = 1;
+    for(var i = 0; i < arr.length; i++) {
+      var el = arr[i];
+      if(object[el] == null){
+        object[el] = 1;
+      }else {
+        object[el]++;	
+    	if(object[el] > maxCount) {
+          maxEl = el;
+          maxCount = object[el];
+        }
+    return maxEl;
+      }
+    }
+}
