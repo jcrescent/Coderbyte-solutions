@@ -1,0 +1,20 @@
+function BinaryConverter(str) { 
+
+  var intArr=[];
+  var digits=str.split("").reverse();
+  var count=0;
+  var num=0
+  
+  for (var i=0;i<digits.length;i++) {
+    intArr.push(parseInt(digits[i]));
+  }
+  for (var i=0;i<intArr.length;i++) {
+    intArr[i]=(intArr[i] * (Math.pow(2,count)));
+    count++;
+  }
+  
+  for (var i=0;i<intArr.length;i++) {
+    num+=intArr[i];
+  }
+  return num;
+}
