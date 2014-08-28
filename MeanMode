@@ -1,0 +1,36 @@
+function MeanMode(arr) { 
+
+ function mean(arr) {
+  var count=0
+  for (var i=0;i<arr.length;i++) {
+    count+=arr[i];
+  }
+  return count/arr.length;        
+}
+  
+  function mode(arr) {
+    if(arr.length == 0)
+    	return null;
+    var object = {};
+    var maxEl = arr[0], maxCount = 1;
+    for(var i = 0; i < arr.length; i++) {
+    	var el = arr[i];
+    	if(object[el] == null){
+    		object[el] = 1;
+    		}else {
+    		object[el]++;
+    		}	
+    	if(object[el] > maxCount) {
+    		maxEl = el;
+    		maxCount = object[el];
+    	}
+    }
+    return maxEl;
+}
+ 
+  if (mean(arr) == mode(arr)) {
+    return 1
+  } else {
+    return 0;
+      }
+}
