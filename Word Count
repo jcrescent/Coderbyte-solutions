@@ -7,5 +7,5 @@ function WordCount(str) {
           wordCount.push[i];
         }
       }
-  return wordCount; 
+  return wordCount.length; 
 }
