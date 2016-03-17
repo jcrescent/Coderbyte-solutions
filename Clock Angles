@@ -1,0 +1,17 @@
+function clockAngles (hour, min) {
+  var hour_hand = (hour * 30) + (min * 0.5);
+  var min_hand = (min * 6);
+  var angle;
+      
+  if (hour_hand > min_hand) {
+    angle = hour_hand - min_hand;
+  } else  {
+    angle = min_hand - hour_hand;
+  }
+  
+  if (angle > 180) {
+    return 360 - angle;
+  } else {
+    return angle;
+  }
+}
